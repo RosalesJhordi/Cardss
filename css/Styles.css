@@ -1,0 +1,112 @@
+:root {
+    --crema: #faf0ca;
+    --blk: #0d3b66;
+    --orange: #f48B5e;
+    --ordark: #f36c33;
+}
+body{
+    background: var(--crema);
+    color: var(--blk);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: var(--crema);
+}
+nav{
+    font-weight: 700;
+}
+a{
+    color: var(--blk);
+}
+.titulo {
+    font-weight: 800;
+}
+#menu{
+    width: 80%;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    z-index: 9999;
+    transform: translateX(-900px);
+    transition: transform 0.5s ease-in-out;
+}
+.video{
+    height: 80vh;
+}
+.card-footer{
+    bottom: 0;
+}
+.cetegorias{
+    gap: 10px;
+}
+.cat,.cat1,.cat2,.cat3{
+    width: 24%;
+    font-weight: 900;
+    font-size: 25px;
+    cursor: pointer;
+}
+.cat:hover,.cat1:hover,.cat2:hover,.cat3:hover{
+    scale: 1.05;
+}
+.cat1{
+    background: var(--blk);
+}
+.cat2{
+    background: var(--ordark);
+}
+.cat3{
+    background: greenyellow;
+}
+#entradas,#principales,#postres,#bebidas{
+    display: none;
+}
+.entradas-h1{
+    font-size: 60px !important;
+    color: var(--ordark);
+    font-weight: 800 !important;
+}
+@media (max-width: 768px) {
+    .titulo{
+        font-size: 25px;
+    }
+    #btn-menu,#btn-menuClose{
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .video{
+        height: 45vh !important;
+    }
+    .video h1{
+        font-size: 30px !important;
+    }
+    .platos{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .card{
+        width: 100% !important;
+    }
+    .card h2{
+        font-size: 25px;
+    }
+    .card p{
+        font-size: 13px;
+    }
+    .card-footer span{
+        font-size: 15px !important;
+    }
+    .card-footer button{
+        font-size: 12px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .cetegorias .cat,.cat1,.cat2,.cat3{
+        width: 48% !important;
+        height: 7vh !important;
+        font-weight: 500;
+        font-size: 22px !important;
+    }
+    .categ{
+        font-size: 25px;
+    }
+}
